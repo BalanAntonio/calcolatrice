@@ -1,0 +1,40 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Calcolatrice</h1>
+    <div id="input"> 876*549</div>
+    <div id="a">
+        <div id="inp">
+            <button name="1" onclick="calcola(this.name)">1</button>
+            <button name="2" onclick="calcola(this.name)">2</button>
+            <button name="3" onclick="calcola(this.name)">3</button><br>
+            <button name="4" onclick="calcola(this.name)">4</button>
+            <button name="5" onclick="calcola(this.name)">5</button>
+            <button name="6" onclick="calcola(this.name)">6</button><br>
+            <button name="7" onclick="calcola(this.name)">7</button>
+            <button name="8" onclick="calcola(this.name)">8</button>
+            <button name="9" onclick="calcola(this.name)">9</button>
+            
+            
+        </div>
+        <br>
+        <div id="op">
+            <button name="+" onclick="calcola(this.name)" >+</button>
+            <button name="-"  onclick="calcola(this.name)" >-</button>
+            <button name="*"  onclick="calcola(this.name)" >*</button><br>
+            <button name="/"  onclick="calcola(this.name)" >/</button>
+            <button name="^"  onclick="calcola(this.name)" >^</button>
+            <button name="√"  onclick="calcola(this.name)" >√</button><br>
+            <button name="AC"  onclick="calcola(this.name)" >AC</button>
+            <button name="="  onclick="calcola(this.name)" >=</button>
+        </div>
+    </div>
+    <div id="ris">Risultato: </div>
+</body>
+</html>
