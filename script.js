@@ -9,14 +9,14 @@ function calcola(op){
                 let low;
                 let high;
                 for(let j = i-1;j>=0;j--){
-                    if(isNaN(parseInt(st[j]))){
+                    if(isNaN(parseFloat(st[j])) && st[j]!="."){
                         low = j;
                         break;
                     }
                 }
 
                 for(let k = i+1;k<st.length;k++){
-                    if(isNaN(parseInt(st[k]))){
+                    if(isNaN(parseFloat(st[k])) && st[k]!="."){
                         high = k;
                         break;
                     }
@@ -31,7 +31,7 @@ function calcola(op){
                 console.log(p1);
                 console.log(p2);
 
-                st = st.replace(p1+"^"+p2,Math.pow(parseInt(p1)*parseInt(p2)));
+                st = st.replace(p1+"^"+p2,Math.pow(parseFloat(p1),parseFloat(p2)).toFixed(2));
                 console.log(st);
                 i=0;
             }else if(st[i]==="√"){
@@ -40,7 +40,7 @@ function calcola(op){
                 
 
                 for(let k = i+1;k<st.length;k++){
-                    if(isNaN(parseInt(st[k]))){
+                    if(isNaN(parseFloat(st[k])) && st[k]!="."){
                         high = k;
                         break;
                     }
@@ -54,7 +54,7 @@ function calcola(op){
                 //console.log(p1);
                 console.log(p2);
 
-                st = st.replace("√"+p2,Math.sqrt(parseInt(p2)));
+                st = st.replace("√"+p2,Math.sqrt(parseFloat(p2)).toFixed(2));
                 console.log(st);
                 i=0;
             }
@@ -65,14 +65,14 @@ function calcola(op){
                 let low;
                 let high;
                 for(let j = i-1;j>=0;j--){
-                    if(isNaN(parseInt(st[j]))){
+                    if(isNaN(parseFloat(st[j])) && st[j]!="."){
                         low = j;
                         break;
                     }
                 }
 
                 for(let k = i+1;k<st.length;k++){
-                    if(isNaN(parseInt(st[k]))){
+                    if(isNaN(parseFloat(st[k])) && st[k]!="."){
                         high = k;
                         break;
                     }
@@ -87,21 +87,21 @@ function calcola(op){
                 console.log(p1);
                 console.log(p2);
 
-                st = st.replace(p1+"*"+p2,parseInt(p1)*parseInt(p2));
+                st = st.replace(p1+"*"+p2,(parseFloat(p1)*parseFloat(p2)).toFixed(2));
                 console.log(st);
                 i=0;
             }else if(st[i]==="/"){
                 let low;
                 let high;
                 for(let j = i-1;j>=0;j--){
-                    if(isNaN(parseInt(st[j]))){
+                    if(isNaN(parseFloat(st[j])) && st[j]!="."){
                         low = j;
                         break;
                     }
                 }
 
                 for(let k = i+1;k<st.length;k++){
-                    if(isNaN(parseInt(st[k]))){
+                    if(isNaN(parseFloat(st[k])) && st[k]!="."){
                         high = k;
                         break;
                     }
@@ -116,7 +116,7 @@ function calcola(op){
                 console.log(p1);
                 console.log(p2);
 
-                st = st.replace(p1+"/"+p2,parseInt(p1)/parseInt(p2));
+                st = st.replace(p1+"/"+p2,(parseFloat(p1)/parseFloat(p2)).toFixed(2));
                 console.log(st);
                 i=0;
             }
@@ -127,14 +127,14 @@ function calcola(op){
                 let low;
                 let high;
                 for(let j = i-1;j>=0;j--){
-                    if(isNaN(parseInt(st[j])) && st[j]!="."){
+                    if(isNaN(parseFloat(st[j])) && st[j]!="."){
                         low = j;
                         break;
                     }
                 }
 
                 for(let k = i+1;k<st.length;k++){
-                    if(isNaN(parseInt(st[k])) && st[k]!="."){
+                    if(isNaN(parseFloat(st[k])) && st[k]!="."){
                         high = k;
                         break;
                     }
@@ -149,21 +149,21 @@ function calcola(op){
                 console.log(p1);
                 console.log(p2);
 
-                st = st.replace(p1+"+"+p2,parseInt(p1)+parseInt(p2));
+                st = st.replace(p1+"+"+p2,(parseFloat(p1)+parseFloat(p2)).toFixed(2));
                 console.log(st);
                 i=0;
             }else if(st[i]==="-"){
                 let low;
                 let high;
                 for(let j = i-1;j>=0;j--){
-                    if(isNaN(parseInt(st[j])) && st[j]!="."){
+                    if(isNaN(parseFloat(st[j])) && st[j]!="."){
                         low = j;
                         break;
                     }
                 }
 
                 for(let k = i+1;k<st.length;k++){
-                    if(isNaN(parseInt(st[k])) && st[k]!="."){
+                    if(isNaN(parseFloat(st[k])) && st[k]!="."){
                         high = k;
                         break;
                     }
@@ -178,7 +178,7 @@ function calcola(op){
                 console.log(p1);
                 console.log(p2);
 
-                st = st.replace(p1+"-"+p2,parseInt(p1)-parseInt(p2));
+                st = st.replace(p1+"-"+p2,(parseFloat(p1)-parseFloat(p2)).toFixed(2));
                 console.log(st);
                 i=0;
             }
