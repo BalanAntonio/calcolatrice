@@ -2,6 +2,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1cm;
     text-align: center;
+    align-items: center;
 }
 
 button{
@@ -35,4 +36,23 @@ input{
 #input{
     width: 15cm;
     height: 5cm;
+    margin:0 auto;
+}
+
+#inp{
+    height: 250px;
+    width: 200px;
+    
+}
+
+#op{
+    height: 250px;
+    width: 200px;
+}
+
+#a{
+    height: 250px;
+    width: 400px;
+    align-self: center;
+    margin:0 auto;
 }
